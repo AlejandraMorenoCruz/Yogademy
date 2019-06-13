@@ -15,20 +15,27 @@ import Clases from './Content/Clases/Clases';
 //CSS
 import './App.css';
 
+const LoginZone = () => (
+  <Start>
+    <Route exact path="/" component={Init} />
+    <Route exact path="/Login" component={Login} />
+    <Route exact path="/Register" component={Register} />
+  </Start>
+)
+
+const ContentZone = () => (
+  <Navigation>
+    <Route exact path="/clases" component={Clases} />
+  </Navigation>
+)
+
 function App() {
 
   return (
     <BrowserRouter>
       <Switch>
-      <Route component={Start}>
-        <Route exact path="/" component = {Init}/>
-        <Route exact path="/Login" component = {Login}/>
-        <Route exact path="/Register" component = {Register}/>
-      </Route>
-
-      <Route component={Navigation}>
-        <Route exact path="/Nav" component = {Navigator}/>
-      </Route>
+        <Route path="/clases" component={ContentZone} />
+        <Route path="/" component={LoginZone} />
       </Switch>
     </BrowserRouter>
   );
