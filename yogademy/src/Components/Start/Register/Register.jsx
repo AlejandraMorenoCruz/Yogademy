@@ -4,29 +4,40 @@ class Register extends React.Component {
   constructor(props){
     super(props);
     this.state={
-      nombre:'',
       nombreusuario:'',
+      contrasena:'',
+      nombre:'',
       correo: '',
       nacimiento:'',
       estilo:'',
       foto:'',
       }
   }
+
+  actualizaNombreusuario(event){
+
+    let nombreusuarioNuevo = event.target.value;
+    let nombreusuarioAnterior ={...this.state};
+    nombreusuarioAnterior.nombreusuario = nombreusuarioNuevo;
+    this.setState(nombreusuarioAnterior)
+
+  }
+
+  actualizaContrasena(event){
+
+    let ContrasenaNuevo = event.target.value;
+    let ContrasenaAnterior ={...this.state};
+    ContrasenaAnterior.contrasena = ContrasenaNuevo;
+    this.setState(ContrasenaAnterior)
+
+  }
+
   actualizaNombre(event){
 
     let nombreNuevo = event.target.value;
     let nombreAnterior ={...this.state};
     nombreAnterior.nombre = nombreNuevo;
     this.setState(nombreAnterior)
-
-  }
-
-  actualizaNombreusuario(event){
-
-    let nombreusuarioNuevo = event.target.value;
-    let nombreusuarioAnterior ={...this.state};
-    nombreusuarioAnterior.apellido = nombreusuarioNuevo;
-    this.setState(nombreusuarioAnterior)
 
   }
 
@@ -43,7 +54,7 @@ class Register extends React.Component {
 
     let nacimientoNuevo = event.target.value;
     let nacimientoAnterior ={...this.state};
-    nacimientoAnterior.nombre = nacimientoNuevo;
+    nacimientoAnterior.nacimiento = nacimientoNuevo;
     this.setState(nacimientoAnterior)
 
   }
@@ -52,7 +63,7 @@ class Register extends React.Component {
 
     let estiloNuevo = event.target.value;
     let estiloAnterior ={...this.state};
-    estiloAnterior.correo = estiloNuevo;
+    estiloAnterior.estilo = estiloNuevo;
     this.setState(estiloAnterior)
 
   }
@@ -61,30 +72,37 @@ class Register extends React.Component {
 
     let fotoNuevo = event.target.value;
     let fotoAnterior ={...this.state};
-    fotoAnterior.correo = fotoNuevo;
+    fotoAnterior.foto = fotoNuevo;
     this.setState(fotoAnterior)
 
   }
 
   enviar(event){
-    alert('usuario registrado'); 
+    alert('usuario registrado');
   }
 
   render() {
     return(
       <div>
+      <div>
+        Nombre de usuario
+          <input
+          value = {this.state.nombreusuario}
+          onChange = {(event) => this.actualizaNombreusuario(event)}>
+          </input>
+      </div>
+      <div>
+        Contraseña
+          <input
+          value = {this.state.contrasena}
+          onChange = {(event) => this.actualizaContrasena(event)}>
+          </input>
+      </div>
         <div>
           Nombre
             <input
             value = {this.state.nombre}
             onChange = {(event) => this.actualizaNombre(event)}>
-            </input>
-        </div>
-        <div>
-          Nombre se usuario
-            <input
-            value = {this.state.nombreusuario}
-            onChange = {(event) => this.actualizaNombreusuario(event)}>
             </input>
         </div>
         <div>
