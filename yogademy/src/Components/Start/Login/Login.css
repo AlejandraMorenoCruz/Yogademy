@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.recuadro{
+  flex-direction:column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(244, 249, 255, 0.5);
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  top: 15%;
+  bottom: 15%;
+  mix-blend-mode: normal;
+  border-radius: 60px;
+  position: absolute;
+}
+
+.botonlo {
+
+  position: absolute;
+
+  left: 30%;
+  right: 30%;
+  top: 70%;
+  bottom: 30%;
+  mix-blend-mode: normal;
+  background: #92BBD2;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2em ;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+.title{
+  position: absolute;
+  left: 28%;
+  top: 22%;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+
+  /* dark */
+  color: #3F7592;
+}
+
+.etiq1{
+
+
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+
+  /* dark */
+  color: #3F7592;
+}
+
+.formulario{
+  width: 200px;
+  height: 40px;
+  background: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  /* light */
+  border: 1px solid #C2DDEB;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/**/

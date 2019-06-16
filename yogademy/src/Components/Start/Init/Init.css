@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 .recuadro{
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  background: rgba(244, 249, 255, 0.6);
+  background: rgba(244, 249, 255, 0.5);
   position: absolute;
   left: 32%;
   right: 32%;
@@ -14,10 +14,10 @@
   border-radius: 60px;
 }
 
-.boton1{
+.boton1 {
   position: absolute;
-  left: 22%;
-  right: 21%;
+  left: 12%;
+  right: 12%;
   top: 22.36%;
   bottom: 62.55%;
   padding-top: 5%;
@@ -31,7 +31,7 @@
   font-style: normal;
   font-weight: 200;
   font-size: 2em;
-  line-height: 42px;
+  line-height:1em;
   display: flex;
   align-items: center;
   text-align: center;
@@ -39,8 +39,8 @@
 }
 .boton2{
   position: absolute;
-  left: 22%;
-  right: 21%;
+  left: 12%;
+  right: 12%;
   top: 60.18%;
   bottom: 24.73%;
   padding: 5%;
@@ -50,8 +50,8 @@
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 2em;
+  line-height: 1em;
   display: flex;
   align-items: center;
   text-align: center;

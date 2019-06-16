@@ -4,16 +4,16 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 const divStyle = {
-  backgroundColor: 'red',
+  backgroundColor: 'green',
   height: '1000px'
 };
 
-const Navigation = ( props) => (
-  <div style={divStyle} > 
+const MainTeacher = ( props) => (
+  <div style={divStyle} >
       {props.children}
   </div>
 
 
 );
 
-export default Navigation;
+export default MainTeacher;

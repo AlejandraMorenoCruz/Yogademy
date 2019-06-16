@@ -10,7 +10,7 @@ const Init = () => (
         <Link to ="/login" >
           <Button className="boton1" type="button" onClick="">Login</Button>
         </Link>
-        <Link to ="/clases" >
+        <Link to ="/register" >
         <Button className="boton2" type="button" onClick="">Registro</Button>
         </Link>
       </div>
