@@ -8,11 +8,11 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Alert from 'react-bootstrap/Alert';
 
-import { getDataWithQuery } from '../../utils/api';
-import storage from '../../utils/storage';
-import './Login.css'
+import { getDataWithQuery } from '../../../utils/api';
+import storage from '../../../utils/storage';
+import './LoginTeacher.css'
 
-class Login extends Component {
+class LoginTeacher extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -107,4 +107,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default LoginTeacher;
