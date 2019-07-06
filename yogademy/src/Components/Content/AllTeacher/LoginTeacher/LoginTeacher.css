@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(244, 249, 255, 0.5);
+  background: #92BBD2;
   position: absolute;
   left: 22%;
   right: 22%;
@@ -19,13 +19,12 @@
 .botonlo {
 
   position: absolute;
-
   left: 30%;
   right: 30%;
   top: 70%;
   bottom: 30%;
   mix-blend-mode: normal;
-  background: #92BBD2;
+  background: #3F7592;
   border-radius: 20px;
   border: none;
   font-family: 'Raleway', sans-serif;
@@ -37,7 +36,7 @@
   align-items: center;
   text-align: center;
 
-  color: #FFFFFF;
+  color: #3F7592;
 
 }
 .title{

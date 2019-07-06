@@ -1,4 +1,6 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom/';
+
 
 class Register extends React.Component {
   constructor(props){
@@ -79,10 +81,12 @@ class Register extends React.Component {
 
   enviar(event){
     alert('usuario registrado');
+    
   }
 
   render() {
     return(
+     
       <div>
       <div>
         Nombre de usuario
@@ -133,13 +137,21 @@ class Register extends React.Component {
             onChange = {(event) => this.actualizaFoto(event)}>
             </input>
         </div>
-        <div>
-        <button onClick
-        >Enviar
+        
+        <button onClick = {(event) => this.enviar(event) } >
+        
+        Enviar
         </button>
-        </div>
+
+        <button onClick = {<Redirect to= "teach/mainTeacher"/>} >
+        login
+        </button>
+        
       </div>
+       
     );
   }
 }
 export default Register;
+
+{/*<Redirect to= 'teach/mainTeacher'/>*/}

@@ -2,16 +2,17 @@ import React from 'react';
 
 //components
 import Logo from './Logo/Logo';
-import UserArea from './UserArea/UserArea';
 
 import './Header.css';
 
 const Header = () =>(
-  <div className = "header">
-    <Logo />
-    <h1>Yogademy</h1>
-    <UserArea />
+
+<>
+  <div className = "barra" fixed="top">
+    <Logo/>
+    <h1 className="sinsentido" fixed="top">Yogademy</h1>
   </div>
+  </>
 );
 //<UserArea loggedIn />
 

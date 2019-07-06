@@ -7,6 +7,7 @@ import Route from 'react-router-dom/Route'
 //Components
 import Background from './Background/Background';
 import Header from './Content/Header/Header';
+import Init from '../Init'
 
     import StartTeacher from './Content/AllTeacher/StartTeacher'
         import MainTeacher from './Content/AllTeacher/MainTeacher/MainTeacher';
@@ -38,22 +39,23 @@ function App() {
     <BrowserRouter>
         <Route component={Background} />
           <Route component={Header}/>
+          <Route exact path="/" component={Init}/>
           <Route exact path="/study" component={InitStudent} />
           <Route exact path="/study/Login" component={LoginStudent} />
           <Route exact path="/study/Register" component={RegisterStudent} />
-          <Route exact path="/study/mainStudent" component={MainStudent} />
-          <Route exact path="/study/teachers" component={Teachers} />
-          <Route exact path="/study/mylessons" component={MyLessons} />
-          <Route exact path="/study/profile" component={ProfileStudent} />
+          <Route path="/study/mainStudent" component={MainStudent} />
+          <Route exact path="/study/mainStudent/teachers" component={Teachers} />
+          <Route exact path="/study/mainStudent/mylessons" component={MyLessons} />
+          <Route exact path="/study/mainStudent/profile" component={ProfileStudent} />
 
           <Route exact path="/teach" component={InitTeacher} />
           <Route exact path="/teach/Login" component={LoginTeacher} />
           <Route exact path="/teach/Register" component={RegisterTeacher} />
-          <Route exact path="/teach/mainTeacher" component={MainTeacher} />
-          <Route exact path="/teach/students" component={Students} />
-          <Route exact path="/teach/lessons" component={Lessons} />
-          <Route exact path="/teach/activity" component={Activity} />
-          <Route exact path="/teach/profile" component={ProfileTeacher} />
+          <Route path="/teach/mainTeacher" component={MainTeacher} />
+          <Route exact path="/teach/mainTeacher/students" component={Students} />
+          <Route exact path="/teach/mainTeacher/lessons" component={Lessons} />
+          <Route exact path="/teach/mainTeacher/activity" component={Activity} />
+          <Route exact path="/teach/mainTeacher/profile" component={ProfileTeacher} />
     </BrowserRouter>
   );
 }

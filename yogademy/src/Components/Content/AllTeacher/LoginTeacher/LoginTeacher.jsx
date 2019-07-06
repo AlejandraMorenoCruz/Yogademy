@@ -12,6 +12,9 @@ import { getDataWithQuery } from '../../../utils/api';
 import storage from '../../../utils/storage';
 import './LoginTeacher.css'
 
+
+
+
 class LoginTeacher extends Component {
   constructor(props) {
     super(props);
@@ -63,7 +66,7 @@ class LoginTeacher extends Component {
   render() {
     let alert = null;
     if (this.state.loggedIn) {
-      return (<Redirect to="/list" />);
+      return (<Redirect to="teach/mainTeacher" />);
     }
     if (this.state.loginError) {
       alert = (<Alert variant="danger">Check password or username!</Alert>);

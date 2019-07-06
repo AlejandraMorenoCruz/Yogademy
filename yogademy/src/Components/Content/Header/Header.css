@@ -1,8 +1,18 @@
-.header{
-  position: absolute;
-  height: 100px;
-  width: 100%;
-  background-color: #000;
-  color: #fff;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+
+.barra {
   display: flex;
+  top:0;
+  align-items: flex-start;
+  float: top;
+  position: absolute;
+  margin: 0%;
+  height: 70px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #3F7592;
+  color: #fff;
+  
 }

@@ -3,13 +3,13 @@ import './Background.css'
 
 // TODO: Add withRouter
 const Background = ({location}) => {
-  let currentImage = 'bgpo.png'
+  let currentImage = 'bgm.jpg'
   // Logic on location.pathname to choose image
   if(location.pathname.includes('/teach')){
-    currentImage = 'bgm.jpg'
+    currentImage = 'bg.jpg'
   }
   else if (location.pathname.includes('/study')) {
-    currentImage = 'bge.jpg'
+    currentImage = 'bgs.jpg'
   }
   const style = { backgroundImage: `url(/bgs/${currentImage})` };
   return (

@@ -35,12 +35,6 @@
   ],
   "items": [
     {
-      "id": 2,
-      "name": "Item 1",
-      "description": "This is item Two",
-      "value": 2
-    },
-    {
       "id": 3,
       "name": "Item 1",
       "description": "This is item Three",
